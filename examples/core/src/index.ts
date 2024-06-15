@@ -1,5 +1,7 @@
-import { corePrint } from '@typescript-library-template/core';
-import { modulePrint } from '@typescript-library-template/core/module';
+import { lruCacheExample } from './lruCache';
+import { redisExample } from './redis';
 
-corePrint();
-modulePrint();
+(async () => {
+  await lruCacheExample();
+  await redisExample();
+})();

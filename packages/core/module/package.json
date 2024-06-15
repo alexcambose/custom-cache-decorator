@@ -1,0 +1,4 @@
+{
+  "main": "dist/typescript-library-template-core-module.cjs.js",
+  "module": "dist/typescript-library-template-core-module.esm.js"
+}

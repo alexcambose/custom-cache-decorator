@@ -1,0 +1,36 @@
+{
+  "name": "@typescript-library-template/utilities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/typescript-library-template-utilities.cjs.js",
+  "module": "dist/typescript-library-template-utilities.esm.js",
+  "types": "dist/typescript-library-template-utilities.cjs.d.ts",
+  "files": [
+    "src",
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/.../...git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/.../.../issues"
+  },
+  "homepage": "https://github.com/.../...",
+  "dependencies": {
+    "@babel/runtime": "7.20.7"
+  },
+  "devDependencies": {
+    "typescript": "4.9.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

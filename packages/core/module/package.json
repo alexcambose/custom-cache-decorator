@@ -1,4 +1,4 @@
 {
-  "main": "dist/typescript-library-template-core-module.cjs.js",
-  "module": "dist/typescript-library-template-core-module.esm.js"
+  "main": "dist/cache-decorator-core-module.cjs.js",
+  "module": "dist/cache-decorator-core-module.esm.js"
 }

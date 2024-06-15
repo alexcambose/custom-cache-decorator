@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "typescript-library-template",
-  "description": "",
+  "name": "cache-decorator",
+  "description": "A decorator to wrap methods and functions with caching capabilities.",
   "packageManager": "yarn@3.4.1",
   "scripts": {
     "postinstall": "preconstruct dev",

@@ -1,1 +1,1 @@
-# @typescript-library-template/core example
+# @cache-decorator/core example

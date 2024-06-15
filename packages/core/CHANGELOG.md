@@ -1,4 +1,4 @@
-# @typescript-library-template/core
+# @cache-decorator/core
 
 ## 1.0.0
 

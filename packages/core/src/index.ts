@@ -75,7 +75,7 @@ export const createCacheDecorator = <T, O>(
    */
   return (decoratorArgs: O): MethodDecorator => {
     return function cache(
-      _target: any,
+      _target: unknown,
       propertyKey: string | symbol,
       descriptor: PropertyDescriptor
     ) {

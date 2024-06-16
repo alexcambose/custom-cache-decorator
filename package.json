@@ -8,7 +8,7 @@
     "build:watch": "preconstruct watch",
     "build": "preconstruct build",
     "lint": "eslint . --fix",
-    "lint:check": "eslint .",
+    "lint:check": "yarn eslint -c eslint.config.mjs '**/*.{ts,jsx,tsx}'",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:dist": "jest -c jest.dist.js --no-cache --ci --runInBand",

@@ -23,6 +23,6 @@
     "noImplicitReturns": true
   },
   "files": ["babel.config.js", "jest.dist.js"],
-  "include": ["packages"],
+  "include": ["src", "test", "examples"],
   "exclude": ["node_modules"]
 }

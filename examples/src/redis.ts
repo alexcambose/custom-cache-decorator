@@ -1,4 +1,4 @@
-import { createCacheDecorator } from '@cache-decorator/core';
+import { createCacheDecorator } from '../../src/index';
 import { createClient } from 'redis';
 import { delay } from './utils';
 

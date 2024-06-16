@@ -1,13 +1,13 @@
 {
-  "private": true,
-  "name": "cache-decorator",
+  "name": "custom-cache-decorator",
+  "version": "1.0.0",
   "description": "A decorator to wrap methods and functions with caching capabilities.",
   "scripts": {
     "postinstall": "preconstruct dev",
     "prepare": "simple-git-hooks",
     "build:watch": "preconstruct watch",
     "build": "preconstruct build",
-    "lint": "eslint . --fix",
+    "lint": "eslint -c eslint.config.mjs '**/*.{ts,jsx,tsx}' --fix",
     "lint:check": "yarn eslint -c eslint.config.mjs '**/*.{ts,jsx,tsx}'",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -27,16 +27,41 @@
       "git add"
     ]
   },
-  "workspaces": [
-    "examples/*",
-    "packages/*"
-  ],
+  "main": "dist/custom-cache-decorator.cjs.js",
+  "module": "dist/custom-cache-decorator.esm.js",
+  "types": "dist/custom-cache-decorator.cjs.d.ts",
   "preconstruct": {
-    "packages": [
-      "packages/*"
+    "entrypoints": [
+      "index.ts"
     ]
   },
+  "files": [
+    "src",
+    "dist",
+    "module",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcambose/cache-decorator.git"
+  },
+  "author": "Alexandru Cambose",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexcambose/cache-decorator/issues"
+  },
+  "homepage": "https://github.com/alexcambose/cache-decorator",
   "dependencies": {
+    "@babel/runtime": "7.20.7"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
     "@babel/core": "7.20.12",
     "@babel/plugin-proposal-decorators": "7.20.7",
     "@babel/plugin-transform-runtime": "7.19.6",
@@ -59,6 +84,8 @@
     "jest-watch-typeahead": "2.2.1",
     "lint-staged": "13.1.0",
     "simple-git-hooks": "2.8.1",
+    "ts-jest": "^29.1.5",
+    "typescript": "4.9.4",
     "typescript-eslint": "^7.13.0"
   }
 }

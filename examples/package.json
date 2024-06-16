@@ -1,5 +1,5 @@
 {
-  "name": "@cache-decorator/core-example",
+  "name": "custom-cache-decorator-example",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -8,7 +8,6 @@
     "start:redis": "docker run -p 6379:6379 -it redis/redis-stack-server:latest"
   },
   "dependencies": {
-    "@cache-decorator/core": "1.0.0",
     "@isaacs/ttlcache": "^1.4.1",
     "redis": "^4.6.14",
     "ts-node": "10.9.1",

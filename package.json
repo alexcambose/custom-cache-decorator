@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "description": "A decorator to wrap methods and functions with caching capabilities.",
   "scripts": {
-    "postinstall": "preconstruct dev",
     "prepare": "simple-git-hooks",
     "build:watch": "preconstruct watch",
     "build": "preconstruct build",

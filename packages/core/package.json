@@ -7,8 +7,7 @@
   "types": "dist/cache-decorator-core.cjs.d.ts",
   "preconstruct": {
     "entrypoints": [
-      "index.ts",
-      "module/index.ts"
+      "index.ts"
     ]
   },
   "files": [

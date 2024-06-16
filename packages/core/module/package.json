@@ -1,4 +1,0 @@
-{
-  "main": "dist/cache-decorator-core-module.cjs.js",
-  "module": "dist/cache-decorator-core-module.esm.js"
-}

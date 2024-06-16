@@ -146,11 +146,7 @@ A string representing the cache key.
 
 ### Advanced Example with Custom Key Generation
 
-You can customize the cache key generation.
-
-typescript
-
-Copy code
+You can customize the cache key generation with the `generateKey` arg.
 
 ```ts
 import {
@@ -183,3 +179,5 @@ Contributions are welcome! Please open an issue or submit a pull request on GitH
 ## License
 
 This project is licensed under the MIT License.
+
+:star:

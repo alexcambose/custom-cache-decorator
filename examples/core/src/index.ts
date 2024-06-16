@@ -1,7 +1,7 @@
-// import { lruCacheExample } from './lruCache';
+import { lruCacheExample } from './lruCache';
 import { redisExample } from './redis';
 
 (async () => {
-  // await lruCacheExample();
+  await lruCacheExample();
   await redisExample();
 })();

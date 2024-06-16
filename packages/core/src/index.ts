@@ -7,7 +7,7 @@
  * @param {unknown[]} args - The arguments passed to the method.
  * @returns {string} The generated cache key.
  */
-const defaultGenerateKey = (
+export const defaultGenerateKey = (
   className: string,
   methodName: string,
   args: unknown[]
@@ -75,16 +75,17 @@ export const createCacheDecorator = <T, O>(
    */
   return (decoratorArgs: O): MethodDecorator => {
     return function cache(
-      target: any,
-      propertyKey: string,
+      _target: any,
+      propertyKey: string | symbol,
       descriptor: PropertyDescriptor
     ) {
       const originalMethod = descriptor.value;
 
       descriptor.value = async function (...args: unknown[]) {
+        const methodName = propertyKey.toString();
         const cacheKey = (options.generateKey || defaultGenerateKey)(
           this.constructor.name,
-          propertyKey,
+          methodName,
           args
         );
         const cachedResult = await options.getItem(cacheKey);

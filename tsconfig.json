@@ -22,15 +22,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true
   },
-  "files": [
-    "babel.config.js",
-    "jest.config.js",
-    "jest.dist.js"
-  ],
-  "include": [
-    "packages"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "files": ["babel.config.js", "_jest.config.js", "jest.dist.js"],
+  "include": ["packages"],
+  "exclude": ["node_modules"]
 }

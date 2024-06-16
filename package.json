@@ -23,8 +23,8 @@
     "post-commit": "git update-index --again"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint . --fix",
+    "*.{ts,tsx}": [
+      "eslint --fix",
       "git add"
     ]
   },

@@ -1,15 +1,14 @@
+/** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
+  // [...]
   transform: {
-    '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: true }],
+    // '^.+\\.[tj]sx?$' to process js/ts with `ts-jest`
+    // '^.+\\.m?[tj]sx?$' to process js/ts/mjs/mts with `ts-jest`
+    '^.+\\.tsx?$': [
+      'ts-jest',
+      {
+        // ts-jest configuration goes here
+      },
+    ],
   },
-  watchPlugins: [
-    'jest-watch-typeahead/filename',
-    'jest-watch-typeahead/testname',
-  ],
-  testPathIgnorePatterns: [
-    '/node_modules/',
-  ],
-  coveragePathIgnorePatterns: [
-    '/node_modules/',
-  ],
 };

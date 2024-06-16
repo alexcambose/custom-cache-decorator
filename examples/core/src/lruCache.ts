@@ -1,7 +1,6 @@
 import { createCacheDecorator } from '@cache-decorator/core';
 import { delay } from './utils';
-
-const TTLCache = require('@isaacs/ttlcache');
+import TTLCache from '@isaacs/ttlcache';
 const cache = new TTLCache({ max: 10000, ttl: 1000 });
 
 const ttlCacheDecorator = createCacheDecorator({

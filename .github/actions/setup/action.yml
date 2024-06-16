@@ -11,6 +11,7 @@ runs:
         cache: yarn
 
     - name: Install Yarn
+      shell: bash
       run: npm install -g yarn
 
     - name: Install dependencies

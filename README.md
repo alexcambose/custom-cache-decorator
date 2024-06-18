@@ -71,6 +71,16 @@ class ExpensiveOperations {
 })();
 ```
 
+also make sure you have `experimentalDecorators` set to `true` in your `tsconfig.json` file
+```
+{
+  "compilerOptions": {
+    ...
+    "experimentalDecorators": true
+    ...
+  }
+}
+```
 ### Using with Redis
 
 Here's an example of using the cache decorator with Redis as the caching backend.

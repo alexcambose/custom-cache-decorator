@@ -1,6 +1,6 @@
 {
   "name": "custom-cache-decorator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A decorator to wrap methods and functions with caching capabilities.",
   "scripts": {
     "prepare": "simple-git-hooks",
